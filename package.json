@@ -1,0 +1,7 @@
+{        "name": "jsonconfig"
+,     "version": "0.1.0"
+, "description": "Simple JSON configuration"
+,    "homepage": "https://github.com/trevorc/jsonconfig"
+,      "author": "Trevor Caira <trevor@caira.com>"
+,        "main": "jsonconfig"
+}
