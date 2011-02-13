@@ -1,5 +1,5 @@
-jsonconfig - Simple, asynchronous JSON config for node.js applications
-======================================================================
+jsonconfig - Simple JSON config for node.js applications
+========================================================
 
 # jsonconfig
 
@@ -12,8 +12,8 @@ Or just copy jsonconfig.js somewhere that your application can find it.
 
 ## Usage:
 
-  jsonconfig asynchronously loads JSON configuration files into a singleton exposed
-  via the module itself.
+  jsonconfig loads JSON configuration files into a singleton exposed via
+  the module itself.
 
   Once the configuration has been loaded, simply access configuration 
 
@@ -30,7 +30,7 @@ Or just copy jsonconfig.js somewhere that your application can find it.
       response.end('OK\n');
     });
 
-    config.load('config.json', 'other_config.json', function(err) {
+    config.load(['config.json', 'other_config.json'], function(err) {
       if (err) throw err;
       server.listen(config.BIND_PORT, config.BIND_ADDR);
     });

@@ -12,12 +12,8 @@
     }
     return _results;
   };
-  this.load = function() {
-    var appendFile, callback, paths, _i, _ref;
-    paths = 2 <= arguments.length ? __slice.call(arguments, 0, _i = arguments.length - 1) : (_i = 0, []), callback = arguments[_i++];
-    if (callback && paths.length === 0) {
-      _ref = [[callback], function() {}], paths = _ref[0], callback = _ref[1];
-    }
+  this.load = function(paths, callback) {
+    var appendFile;
     appendFile = function(_arg) {
       var x, xs;
       x = _arg[0], xs = 2 <= _arg.length ? __slice.call(_arg, 1) : [];

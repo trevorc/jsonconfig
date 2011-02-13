@@ -7,13 +7,10 @@ extend = (obj, other) ->
   for key, val of other
     obj[key] = val
 
-@load = (paths..., callback) ->
-  if callback and paths.length == 0
-    [paths, callback] = [[callback], ->]
-
+@load = (paths, callback) ->
   appendFile = ([x, xs...]) ->
-    return callback null, config unless x?
-    fs.readFile x, 'UTF-8', (err, data) ->
+    return callback() unless x?
+    fs.readFileSync x, 'UTF-8', (err, data) ->
       if err?
         callback err
       else
