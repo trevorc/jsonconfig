@@ -30,10 +30,8 @@ Or just copy jsonconfig.js somewhere that your application can find it.
       response.end('OK\n');
     });
 
-    config.load(['config.json', 'other_config.json'], function(err) {
-      if (err) throw err;
-      server.listen(config.BIND_PORT, config.BIND_ADDR);
-    });
+    config.load(['config.json', 'other_config.json']);
+    server.listen(config.BIND_PORT, config.BIND_ADDR);
 
 
 ## License:
