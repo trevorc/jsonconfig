@@ -36,4 +36,4 @@ Or just copy jsonconfig.js somewhere that your application can find it.
 
 ## License:
 
-Released under the MIT License. Copyright (c) 2011 Trevor Caira.
+Released under the MIT License. Copyright (c) 2011-2012 Trevor Caira.
